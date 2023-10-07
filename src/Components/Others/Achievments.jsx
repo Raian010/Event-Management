@@ -1,23 +1,46 @@
 const Achievments = () => {
   return (
-    <div className="mt-4">
+    <div className="mt-10">
       <h2 className="text-4xl font-bold text-center">Our Achievments</h2>
-      <div>
-        <div>
-          <div className="card bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
+      <div className="mt-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="card bg-base-200 mb-2 shadow-xl">
+            <figure className="px-5 pt-10">
               <img
-                src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                src="https://i.postimg.cc/Tw9LRfQ9/images-1.jpg"
                 alt="Shoes"
-                className="rounded-xl"
+                className="rounded-xl bg-blue-400"
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
+              <h2 className="card-title text-4xl font-semibold">Total Books</h2>
+              <p className="text-5xl mt-2 font-bold">20+</p>
+            </div>
+          </div>
+          <div className="card bg-base-200 mb-2 shadow-xl">
+            <figure className="px-5 pt-10">
+              <img
+                src="https://i.postimg.cc/WpScLpkF/360-F-65772719-A1-UV5k-Li5n-CEWI0-BNLLi-Fa-BPEk-Ubv5-Fv.jpg"
+                alt="Shoes"
+                className="rounded-xl w-[163px]"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title text-4xl font-semibold">Total Clients</h2>
+              <p className="text-5xl mt-2 font-bold">50K+</p>
+            </div>
+          </div>
+          <div className="card bg-base-200 mb-2 shadow-xl">
+            <figure className="px-5 pt-10">
+              <img
+                src="https://i.postimg.cc/Kvdzh1xb/images-3.jpg"
+                alt="Shoes"
+                className="rounded-xl w-[163px]"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title text-4xl font-semibold">Global Position</h2>
+              <p className="text-5xl mt-2 font-bold">180th</p>
             </div>
           </div>
         </div>

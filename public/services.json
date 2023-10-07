@@ -4,41 +4,47 @@
       "Title": "Health Fair Success",
       "Image": "https://i.postimg.cc/qvKwngzx/gettyimages-638362414-170667a.jpg",
       "Description": "Discover the latest trends in health and wellness at our annual Health Fair. Join us for informative talks, free health screenings, and more.",
-      "Author": "Jane Smith"
+      "Author": "Jane Smith",
+      "price" : 120
     },
     {
       "id": 2,
       "Title": "The Power of Yoga",
       "Image": "https://i.postimg.cc/nrw2KD40/gettyimages-1133155626-170667a.jpg",
       "Description": "Dive into the world of yoga and learn how it can improve your physical and mental well-being. Find inner peace and balance through yoga practice.",
-      "Author": "John Doe"
+      "Author": "John Doe",
+      "price" : 100
     },
     {
       "id": 3,
       "Title": "Fitness for Life",
       "Image": "https://i.postimg.cc/d3XRZKFf/gettyimages-507957929-170667a.jpg",
       "Description": "Explore effective fitness routines and tips to stay active and healthy. Get inspired to achieve your fitness goals.",
-      "Author": "Sarah Johnson"
+      "Author": "Sarah Johnson",
+      "price" : 180
     },
     {
       "id": 4,
       "Title": "Wellness Wisdom",
       "Image": "https://i.postimg.cc/sXH7bRM2/gettyimages-1397973635-170667a.jpg",
       "Description": "Discover the secrets to holistic wellness. Explore natural remedies, nutrition, and mindfulness for a healthier life.",
-      "Author": "David Williams"
+      "Author": "David Williams",
+      "price" : 220
     },
     {
       "id": 5,
       "Title": "A Journey to Wellbeing",
       "Image": "https://i.postimg.cc/FK9SRKcR/gettyimages-1321664779-170667a.jpg",
       "Description": "Embark on a transformative journey to total wellbeing. Learn how to balance mind, body, and spirit for a happier life.",
-      "Author": "Emily Parker"
+      "Author": "Emily Parker",
+      "price" : 320
     },
     {
       "id": 6,
       "Title": "Holistic Health Insights",
       "Image": "https://i.postimg.cc/mZ08rQrg/gettyimages-175454552-170667a.jpg",
       "Description": "Delve into the world of holistic health and alternative therapies. Explore the mind-body connection and its impact on wellness.",
-      "Author": "Michael Anderson"
+      "Author": "Michael Anderson",
+      "price" : 180
     }
   ]
