@@ -1,7 +1,7 @@
-
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-
+import swal from "sweetalert";
 
 const Register = () => {
   const { handleRegister } = useContext(AuthContext);
@@ -23,6 +23,14 @@ const Register = () => {
       })
       
     }
+
+    const showSuccessAlert = () => {
+      swal({
+        title: 'Success!',
+        text: 'Your Registration is successful ✅',
+        icon: 'success',
+      });
+    };
     return (
         <div>
          <div className="hero-content flex-col">
@@ -51,10 +59,10 @@ const Register = () => {
           <input type="password" name="password" placeholder="password" className="input input-bordered" required />
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Register</button>
+          <button onClick={showSuccessAlert} className="btn btn-primary">Register</button>
         </div>
         <div>
-          <p className="mt-2 text-center">Already registerd? </p>
+          <p className="text-center">Already Registered?  <Link className="text-blue-900 text-lg font-bold" to="/login">Login</Link> </p>
         </div>
       </form>
     </div>

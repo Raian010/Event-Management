@@ -3,7 +3,9 @@ const System = () => {
     return (
         <div className="mt-20">
             <div className="flex justify-center">
-            <h2 className="text-4xl rounded-lg font-bold bg-gray-400 p-2 w-[400px] text-center">Our System</h2>
+            <div className="rounded-lg flex items-center justify-center bg-base-200 py-2 w-[400px]">
+            <h2 className="text-4xl font-bold text-center">Our System</h2>
+            </div>
             </div>
             <div className="hero mt-10 mb-20">
   <div className="hero-content flex-col lg:flex-row">
