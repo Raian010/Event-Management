@@ -4,7 +4,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 // import swal from "sweetalert";
 const Login = () => {
-    const { user,handleLogin,handleGoogleSign } = useContext(AuthContext);
+  // user
+    const { handleLogin,handleGoogleSign } = useContext(AuthContext);
     // const [loginError,setLoginError] = useState(null);
     const location = useLocation();
     const navigate = useNavigate()
@@ -82,7 +83,7 @@ const Login = () => {
           <button className="btn btn-primary">Login</button>
         </div>
         <div>
-          <p className="text-center">Don't have an account?  <Link className="text-blue-900 text-lg font-bold" to="/register">Register</Link> </p>
+          <p className="text-center">Do not have an account?  <Link className="text-blue-900 text-lg font-bold" to="/register">Register</Link> </p>
         </div>
         <p className="m-2 text-center">OR</p>
         <div>
