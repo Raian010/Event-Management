@@ -3,7 +3,7 @@
   <h1>MCQ TEST</h1>
 </div>
 
-###### 1. Write the `correct answer` from the following options and give an explanation (2-5 lines).
+######  1  ######
 
 ```javascript
 let greeting;
@@ -18,14 +18,15 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Here we can see that a variable is declared named "greeting" but in the next line the variable "greetign" is not declared.As a result,it will give us an error.</i>
 
 </p>
 </details>
 
-###### 2. Write the `correct answer` from the following options and give an explanation (2-5 lines).
+
+######  2  ######
 
 ```javascript
 function sum(a, b) {
@@ -43,14 +44,14 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Here we can see sum of a and b.Here 'a' is a number but 'b' is not a number but a string.As a result,it will not give a numeric result.Here "2" will not add with 1 and give an output of "12".</i>
 
 </p>
 </details>
 
-###### 3. Write the `correct answer` from the following options and give an explanation (2-5 lines).
+######  3  ######
 
 ```javascript
 const food = ["🍕", "🍫", "🥑", "🍔"];
@@ -69,14 +70,14 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>Here,the food array will not be affected by info result.Because the food array has it's own reference.So,the change of info.favouriteFood can't change the array of food.Though,it will change the value of info object.</i>
 
 </p>
 </details>
 
-###### 4. Write the `correct answer` from the following options and give an explanation (2-5 lines).
+######  4  ######
 
 ```javascript
 function sayHi(name) {
@@ -94,14 +95,14 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Here,as we can see the function 'sayHi' has a perameter but it didn't assigned it's value.As a result,the given 'Hi there' will be there as output and there will be an undefined for 'name' perameter as it's value is not assigned.</i>
 
 </p>
 </details>
 
-###### 5. Write the `correct answer` from the following options and give an explanation (2-5 lines).
+######  5  ######
 
 ```javascript
 let count = 0;
@@ -122,9 +123,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Here,In nums array the array[0] value is 0.In js 0 is considered as a falsy that's why it won't be counted.On the other hand,rest of the value 1,2,3 will be counted as truthy.The count value is initially 0.As a result,there would be 3 true values.So  the count total will be 3.</i>
 
 </p>
 </details>
