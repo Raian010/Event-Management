@@ -4,8 +4,8 @@ const System = () => {
     return (
         <div className="mt-20">
             <div className="flex justify-center">
-            <div className="rounded-lg flex items-center justify-center bg-base-200 py-2 w-[400px]">
-            <h2 className="text-4xl font-bold text-center">Our System</h2>
+            <div className="rounded-xl flex items-center justify-center bg-base-200 py-3 w-[400px]">
+            <h2 className="text-4xl font-bold text-center">Our <span className="text-blue-600">System</span></h2>
             </div>
             </div>
             <div className="hero mt-10 mb-20">

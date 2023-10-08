@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
-    console.log(service);
+    // console.log(service);
     const {id,Title,Image,Description,Author,price} = service;
     return (
         <div className="card bg-base-200 shadow-xl">

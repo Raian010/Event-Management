@@ -1,7 +1,7 @@
 const Achievments = () => {
   return (
-    <div className="mt-10">
-      <h2 className="text-4xl mb-10 font-bold text-center">Our Achievments</h2>
+    <div className="mt-20">
+      <h2 className="text-4xl mb-10 font-bold text-center">Our <span className="text-blue-600">Achievments</span></h2>
       <div className="mt-5 lg:flex lg:justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-20">
           <div className="card lg:w-80 bg-base-200 mb-2 shadow-xl">

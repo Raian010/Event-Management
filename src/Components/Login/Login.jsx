@@ -8,7 +8,8 @@ const Login = () => {
     const { handleLogin,handleGoogleSign } = useContext(AuthContext);
     const [loginError,setLoginError] = useState(null);
     const location = useLocation();
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    console.log(location);
 
 
     const showSuccessAlert = () => {

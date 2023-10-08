@@ -11,9 +11,10 @@ import AuthProvider from "./Components/AuthProvider/AuthProvider";
 import Login from "./Components/Login/Login";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import ErrorPage from "./Components/Error/ErrorPage";
-import { element } from "prop-types";
+// import { element } from "prop-types";
 import SystemPage from "./Components/System/SystemPage";
-import Important from "./Components/Important/Important";
+import Gallery from "./Components/Important/Gallery";
+import Profile from "./Components/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/important",
-        element: <PrivateRoute><Important></Important></PrivateRoute>
+        element: (
+          <PrivateRoute>
+            <Gallery></Gallery>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/register",
@@ -46,6 +51,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>,
+      },
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/system",
