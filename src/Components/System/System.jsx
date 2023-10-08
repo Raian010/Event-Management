@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const System = () => {
     return (
@@ -13,7 +14,7 @@ const System = () => {
     <div>
       <h1 className="text-5xl font-bold">This is how our system works</h1>
       <p className="py-6 text-2xl">We are providing our clients since 2001 and we are confident about our system.You can get to know about our system by clicking Our system button below</p>
-      <button className="btn btn-primary">Our System</button>
+      <Link to="/system"><button className="btn btn-primary">Our System</button></Link>
     </div>
   </div>
 </div>

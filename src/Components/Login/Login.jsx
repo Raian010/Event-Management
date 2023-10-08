@@ -1,22 +1,23 @@
 import { useContext } from "react";
-// import { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-// import swal from "sweetalert";
+import swal from "sweetalert";
 const Login = () => {
   // user
     const { handleLogin,handleGoogleSign } = useContext(AuthContext);
-    // const [loginError,setLoginError] = useState(null);
+    const [loginError,setLoginError] = useState(null);
     const location = useLocation();
     const navigate = useNavigate()
 
-    // const showSuccessAlert = () => {
-    //   swal({
-    //     title: 'Success!',
-    //     text: 'Your Login is successful ✅',
-    //     icon: 'success',
-    //   });
-    // };
+
+    const showSuccessAlert = () => {
+      swal({
+        title: 'Success!',
+        text: 'Your Login is successful ✅',
+        icon: 'success',
+      });
+    };
 
     const Login = (e) => {
         e.preventDefault();
@@ -24,16 +25,19 @@ const Login = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(name,email,password);
+
+        setLoginError("");
   
         handleLogin(email,password)
         .then(result => {
           console.log(result.user);
+          showSuccessAlert();
           navigate(location?.state ? location.state : "/")
-          // showSuccessAlert();
+          
         })
         .catch(error => {
           console.log(error);
-          // setLoginError(error.message)
+          setLoginError(error.message)
         })
     }
 
@@ -41,20 +45,13 @@ const Login = () => {
       handleGoogleSign()
       .then(result => {
         console.log(result.user);
-        navigate(location?.state ? location.state : "/")
+        showSuccessAlert();
+        navigate(location?.state ? location.state : "/");
       })
       .catch(error => {
         console.log(error);
       })
     }
-
-    // const showErrorAlert = () => {
-    //   swal({
-    //     title: "Error!",
-    //     text: loginError || "Registration failed",
-    //     icon: "error",
-    //   });
-    // };
 
     
     return (
@@ -79,7 +76,6 @@ const Login = () => {
           <input type="password" name="password" placeholder="password" className="input input-bordered" required />
         </div>
         <div className="form-control mt-6">
-        {/* onClick={user ? showSuccessAlert : showErrorAlert} */}
           <button className="btn btn-primary">Login</button>
         </div>
         <div>
@@ -92,6 +88,7 @@ const Login = () => {
       </form>
     </div>
   </div>
+  <p className="text-red-500 text-center font-semibold">{loginError}</p>
        </div>
     );
 };

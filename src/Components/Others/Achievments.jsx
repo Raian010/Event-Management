@@ -1,10 +1,10 @@
 const Achievments = () => {
   return (
     <div className="mt-10">
-      <h2 className="text-4xl font-bold text-center">Our Achievments</h2>
-      <div className="mt-5">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div className="card bg-base-200 mb-2 shadow-xl">
+      <h2 className="text-4xl mb-10 font-bold text-center">Our Achievments</h2>
+      <div className="mt-5 lg:flex lg:justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-20">
+          <div className="card lg:w-80 bg-base-200 mb-2 shadow-xl">
             <figure className="px-5 pt-10">
               <img
                 src="https://i.postimg.cc/Tw9LRfQ9/images-1.jpg"
@@ -17,7 +17,7 @@ const Achievments = () => {
               <p className="text-5xl mt-2 font-bold">20+</p>
             </div>
           </div>
-          <div className="card bg-base-200 mb-2 shadow-xl">
+          <div className="card lg:w-80 bg-base-200 mb-2 shadow-xl">
             <figure className="px-5 pt-10">
               <img
                 src="https://i.postimg.cc/WpScLpkF/360-F-65772719-A1-UV5k-Li5n-CEWI0-BNLLi-Fa-BPEk-Ubv5-Fv.jpg"
@@ -30,7 +30,7 @@ const Achievments = () => {
               <p className="text-5xl mt-2 font-bold">50K+</p>
             </div>
           </div>
-          <div className="card bg-base-200 mb-2 shadow-xl">
+          <div className="card lg:w-80 bg-base-200 mb-2 shadow-xl">
             <figure className="px-5 pt-10">
               <img
                 src="https://i.postimg.cc/Kvdzh1xb/images-3.jpg"
