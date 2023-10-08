@@ -1,8 +1,20 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 const Achievments = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, 
+     offset: 100,   
+      easing: 'ease-in-out', 
+      delay: 100,     
+    });
+  }, []);
   return (
-    <div className="mt-20">
-      <h2 className="text-4xl mb-10 font-bold text-center">Our <span className="text-blue-600">Achievments</span></h2>
-      <div className="mt-5 lg:flex lg:justify-center">
+    <div className="mt-20" data-aos="slide-up">
+      <h2 className="text-4xl mb-10 font-bold text-center" data-aos="fade-right">Our <span className="text-blue-600">Achievments</span></h2>
+      <div className="mt-5 lg:flex lg:justify-center" data-aos="fade-up">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-20">
           <div className="card lg:w-80 bg-base-200 mb-2 shadow-xl">
             <figure className="px-5 pt-10">

@@ -1,5 +1,6 @@
 
 const Banner = () => {
+
     return (
         <div className="hero min-h-[80vh]" style={{backgroundImage: 'url(https://i.postimg.cc/SRh0CHGg/images.jpg)'}}>
   <div className="hero-overlay bg-opacity-80"></div>

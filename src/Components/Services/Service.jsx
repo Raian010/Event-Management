@@ -1,11 +1,22 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Service = ({service}) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, 
+     offset: 100,   
+      easing: 'ease-in-out', 
+      delay: 100,     
+    });
+  }, []); 
     // console.log(service);
     const {id,Title,Image,Description,Author,price} = service;
     return (
-        <div className="card bg-base-200 shadow-xl">
+        <div className="card bg-base-200 shadow-xl" data-aos="fade-up">
   <figure><img className='h-[278px]' src={Image} /></figure>
   <div className="card-body space-y-1">
     <h2 className="card-title text-2xl font-bold">{Title} </h2>
