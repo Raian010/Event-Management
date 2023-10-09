@@ -4,7 +4,7 @@
 
 https://assignment-react-auth.web.app
 
-## Three Features of this project
+## Five Features of this project
 -If we click on any cards,it will take us to it's details page.
 
 -There is a profile section to show our profile.

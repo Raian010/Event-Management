@@ -46,9 +46,10 @@ const Login = () => {
       handleGoogleSign()
       .then(result => {
         console.log(result.user);
-        showSuccessAlert();
+        showSuccessAlert()
         navigate(location?.state ? location.state : "/");
       })
+      
       .catch(error => {
         console.log(error);
       })
